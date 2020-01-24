@@ -4,15 +4,15 @@
 # or whitespace (' ').
 class EmailAddressParser
   attr_accessor :cvs_emails
-  def initialize(cvs_email)
-    @cvs_emails = cvs_email
-  end
+ def initialize(cvs_email)
+   @cvs_emails = cvs_email
+ end
   
-  def parse
-     cvs_emails.delete(',').split.uniq
+ def parse
+   cvs_emails.delete(',').split.uniq
   
-  # @cvs_email = cvs_email.gsub(/[\s]|,/)
-  # cvs_email.uniq
+#   # @cvs_email = cvs_email.gsub(/[\s]|,/)
+#   # cvs_email.uniq
   end
 
 end
